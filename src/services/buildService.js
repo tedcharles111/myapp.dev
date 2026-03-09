@@ -2,7 +2,7 @@ import { spawn } from "child_process";
 import path from 'path';
 import fs from 'fs/promises';
 import { config } from '../config/index.js';
-import { logger } from '../utils/logger';
+import { logger } from '../utils/logger.js';
 
 const runCommand = (cmd, args, projectDir) =>
   new Promise((resolve, reject) => {
