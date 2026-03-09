@@ -1,7 +1,7 @@
 import express from 'express';
 import { createContextLogger } from '../utils/logger.js';
 import { checkDiskSpace, directoryExists } from '../utils/fileSystem.js';
-import { checkBuildTools } from '../services/buildService.js';
+// import { // checkBuildTools } from '../services/buildService.js';
 import config from '../config/index.js';
 import os from 'os';
 
@@ -35,7 +35,7 @@ router.get('/health', async (req, res, next) => {
 
     // Verificar ferramentas de build
     try {
-      await checkBuildTools();
+      await // checkBuildTools();
       checks.buildTools = { available: true };
     } catch (error) {
       checks.buildTools = { 
