@@ -1,4 +1,4 @@
-import { spawn } from 'child_process.js';
+import { spawn } from "child_process";
 import path from 'path.js';
 import fs from 'fs/promises.js';
 import { config } from '../config/index.js';
